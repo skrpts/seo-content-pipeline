@@ -1,0 +1,38 @@
+name: "seo-content-pipeline"
+display_name: "SEO Content Pipeline"
+description: "SEO-optimised content strategy, keyword research, and on-page optimisation"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+licence: "MIT"
+repository: "https://github.com/skrpts/seo-content-pipeline"
+
+category: "marketing"
+tags:
+  - "seo"
+  - "content-strategy"
+  - "keyword-research"
+  - "on-page-optimisation"
+  - "content-marketing"
+
+requires:
+  services:
+    - "anthropic-claude"
+  permissions:
+    - "network:web-search"
+  data_handling:
+    - "website-analytics"
+    - "keyword-data"
+
+contents:
+  skills: 3
+  prompts: 5
+  workflows: 1
+  services: 1
+  sources: 1
+  documents: 1
+  assets: 1
+  total: 13

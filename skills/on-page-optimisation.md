@@ -5,7 +5,7 @@ title: On-Page Optimisation
 description: "Analyses and optimises on-page SEO elements including meta tags, headings, content structure, and technical factors"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: seo-ranking-factors-reference
     type: references

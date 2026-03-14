@@ -5,7 +5,7 @@ title: Keyword Research
 description: "Identifies and evaluates keywords for SEO targeting based on relevance, volume, difficulty, and search intent"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: seo-ranking-factors-reference
     type: references

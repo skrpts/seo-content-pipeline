@@ -5,7 +5,7 @@ title: Content Gap Analysis
 description: "Identifies missing, thin, or underperforming content relative to competitors and target keyword coverage"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: seo-ranking-factors-reference
     type: references

@@ -21,7 +21,7 @@ connections:
     type: uses
   - target: internal-linking-strategist
     type: uses
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: seo-ranking-factors-reference
     type: references
@@ -101,3 +101,48 @@ The complete pipeline produces:
 4. Audit reports for existing content
 5. Meta tag recommendations
 6. Internal linking strategy
+
+## Inputs
+
+| Name | Required | Description | Example |
+|------|----------|-------------|---------|
+| `{{input.seed_topic_or_keyword}}` | Yes | Seed topic or keyword | `growth, onboarding, retention` |
+| `{{input.target_market}}` | Yes | target market | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.competitor_urls}}` | Yes | competitor URLs | `https://example.com/reference` |
+| `{{input.existing_content_inventory}}` | No | existing content inventory | `Paste the relevant brief, notes, source material, or dataset here.` |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| Keyword clusters grouped by topic and intent , | Keyword clusters grouped by topic and intent , with estimated search volume tiers and difficulty ratings |
+| Gap report listing missing topics, underperforming pages, and competitor content advantages | Gap report listing missing topics, underperforming pages, and competitor content advantages |
+| Complete content brief ready to hand to a writer, using the content-brief-template asset format | Complete content brief ready to hand to a writer, using the content-brief-template asset format |
+| Prioritised list of improvements | Prioritised list of improvements with expected impact |
+| Optimised meta tags, on-page recommendations, and internal linking plan | Optimised meta tags, on-page recommendations, and internal linking plan |
+
+## Setup
+
+Before running this workflow:
+
+1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
+2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
+
+## Provider Notes
+
+- Most stages work with any capable model; stronger models usually improve synthesis, judgement, and writing quality.
+- Extraction, classification, and formatting steps generally run well on smaller or faster models.
+- Because there are no vendor-specific integrations here, provider choice is mostly a trade-off between speed, quality, and cost.
+
+## Example Input
+
+To test this workflow immediately after import:
+
+```
+Seed Topic Or Keyword: "growth, onboarding, retention"
+Target Market: "Paste the relevant brief, notes, source material, or dataset here."
+Competitor Urls: "https://example.com/reference"
+Existing Content Inventory: "Paste the relevant brief, notes, source material, or dataset here."
+```
+

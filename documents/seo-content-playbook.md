@@ -2,7 +2,7 @@
 type: document
 id: seo-content-playbook
 title: SEO Content Playbook
-description: "Comprehensive playbook for creating SEO-driven content from strategy through execution"
+description: "Complete playbook for creating SEO-driven content from strategy through execution"
 tags: [Production, Tested]
 connections:
   - target: seo-ranking-factors-reference

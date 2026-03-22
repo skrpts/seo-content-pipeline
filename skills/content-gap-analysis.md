@@ -33,7 +33,7 @@ Analyses the gap between a site's existing content and the content needed to com
 2. **Competitor Content Mapping** — Analyse competitor sites to identify topics and keywords they rank for that the user does not. Map competitor content depth (word count, heading structure, content format) to understand the quality bar for each topic.
 
 3. **Topic Coverage Scoring** — Score each topic cluster on a coverage scale:
-   - **Full coverage:** Strong, comprehensive content that ranks well
+   - **Full coverage:** Strong, thorough content that ranks well
    - **Partial coverage:** Content exists but is thin, outdated, or poorly optimised
    - **No coverage:** No content targets this topic or keyword cluster
    - **Cannibalised:** Multiple pages compete for the same keywords

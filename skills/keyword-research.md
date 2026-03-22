@@ -16,7 +16,7 @@ metadata:
 
 ## Capability
 
-Performs comprehensive keyword research for a given topic, niche, or business domain. Analyses keywords across four dimensions: relevance to the target audience, estimated search volume tier, ranking difficulty, and search intent classification.
+Performs thorough keyword research for a given topic, niche, or business domain. Analyses keywords across four dimensions: relevance to the target audience, estimated search volume tier, ranking difficulty, and search intent classification.
 
 ## When to Use
 
@@ -28,7 +28,7 @@ Performs comprehensive keyword research for a given topic, niche, or business do
 
 ## Process
 
-1. **Seed Expansion** — Take the provided seed keyword or topic and generate a comprehensive list of related keywords, including synonyms, long-tail variations, question-based queries, and related subtopics. Consider how real users would search for this information at different stages of awareness.
+1. **Seed Expansion** — Take the provided seed keyword or topic and generate a complete list of related keywords, including synonyms, long-tail variations, question-based queries, and related subtopics. Consider how real users would search for this information at different stages of awareness.
 
 2. **Intent Classification** — Classify each keyword by search intent:
    - **Informational:** User wants to learn something ("how to", "what is", "guide to")

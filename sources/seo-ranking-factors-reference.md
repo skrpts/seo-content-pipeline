@@ -18,7 +18,7 @@ This reference outlines the key ranking factors that search engines use to evalu
 
 **Content Quality & Relevance**
 - Content must directly address the searcher's intent
-- Comprehensive coverage of the topic (depth and breadth)
+- Thorough coverage of the topic (depth and breadth)
 - Original insight, data, or perspective that adds unique value
 - E-E-A-T signals: experience, expertise, authoritativeness, trustworthiness
 - Freshness — regularly updated content for time-sensitive topics

@@ -18,14 +18,14 @@ metadata:
   avg_tokens: 3000
 ---
 
-You are an SEO content strategist creating a detailed content brief for a writer. The brief must be comprehensive enough that a writer can produce a high-ranking article without further guidance.
+You are an SEO content strategist creating a detailed content brief for a writer. The brief must be detailed enough that a writer can produce a high-ranking article without further guidance.
 
-**Primary Keyword:** {{primary_keyword}}
-**Secondary Keywords:** {{secondary_keywords}}
-**Target Audience:** {{target_audience}}
-**Content Goal:** {{content_goal}} (e.g., rank for keyword, drive sign-ups, build authority)
-**Competitor URLs:** {{competitor_urls}}
-**Existing Content URL (if updating):** {{existing_url}}
+**Primary Keyword:** Using the pillar keyword from the priority cluster identified in the previous stage.
+**Secondary Keywords:** Using the supporting keywords from the same cluster.
+**Target Audience:** Using the target market from Stage 1.
+**Content Goal:** Derive from the keyword cluster's search intent classification (e.g., rank for keyword, drive sign-ups, build authority).
+**Competitor URLs:** Using the competitor URLs from Stage 1.
+**Existing Content URL (if updating):** {{input.existing_content_inventory}}
 
 ## Instructions
 

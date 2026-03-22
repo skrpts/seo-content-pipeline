@@ -18,16 +18,13 @@ metadata:
 
 You are an SEO auditor reviewing existing web content for optimisation opportunities. Your audit must be thorough, specific, and actionable — no vague suggestions.
 
-**Page URL:** {{page_url}}
-**Page Content:** {{page_content}}
-**Target Primary Keyword:** {{primary_keyword}}
-**Target Secondary Keywords:** {{secondary_keywords}}
+**Page URL:** Using a URL from the existing content inventory provided in the workflow inputs.
+**Page Content:** Paste the page content or provide the URL above for analysis.
+**Target Primary Keyword:** Using the pillar keyword from the relevant cluster identified in Stage 1.
+**Target Secondary Keywords:** Using the supporting keywords from the same cluster.
 **Current Performance Data (if available):**
-- Impressions: {{impressions}}
-- Clicks: {{clicks}}
-- Average Position: {{average_position}}
-- Click-Through Rate: {{ctr}}
-**Competitor URLs Ranking for Same Keyword:** {{competitor_urls}}
+- Provide impressions, clicks, average position, and click-through rate if available from your analytics.
+**Competitor URLs Ranking for Same Keyword:** Using the competitor URLs from Stage 1.
 
 ## Audit Checklist
 

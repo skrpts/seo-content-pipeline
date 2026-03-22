@@ -14,13 +14,13 @@ metadata:
   avg_tokens: 2500
 ---
 
-You are an SEO keyword strategist. Your task is to generate comprehensive keyword clusters from the seed topic provided below.
+You are an SEO keyword strategist. Your task is to generate thorough keyword clusters from the seed topic provided below.
 
-**Seed Topic:** {{seed_topic}}
-**Target Market:** {{target_market}}
-**Domain Authority Level:** {{domain_authority}} (new / growing / established)
-**Geographic Focus:** {{geographic_focus}}
-**Competitor URLs (if available):** {{competitor_urls}}
+**Seed Topic:** {{input.seed_topic_or_keyword}}
+**Target Market:** {{input.target_market}}
+**Domain Authority Level:** Infer from the target market context (new / growing / established).
+**Geographic Focus:** Derive from the target market description.
+**Competitor URLs (if available):** {{input.competitor_urls}}
 
 ## Instructions
 

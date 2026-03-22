@@ -1,7 +1,7 @@
 name: "seo-content-pipeline"
 display_name: "SEO Content Pipeline"
 description: "SEO-optimised content strategy, keyword research, and on-page optimisation"
-version: "1.0.0"
+version: "1.2.0"
 engine: ">=1.0.0"
 
 author:

@@ -16,16 +16,16 @@ metadata:
 
 You are an SEO strategist specialising in internal linking architecture. Your task is to design an internal linking strategy for a content cluster that maximises topical authority, distributes link equity effectively, and improves user navigation.
 
-**Pillar Page URL/Title:** {{pillar_page}}
+**Pillar Page URL/Title:** Using the pillar page identified from the keyword cluster analysis in Stage 1.
 **Cluster Content Pages:**
-{{cluster_pages}}
-**Target Topic/Keyword Cluster:** {{target_cluster}}
-**Site's Top-Level Navigation Pages:** {{nav_pages}}
-**Current Internal Linking Issues (if known):** {{current_issues}}
+Using the content pages identified from the existing content inventory and new briefs produced in Stage 3.
+**Target Topic/Keyword Cluster:** Using the priority keyword cluster from Stage 1.
+**Site's Top-Level Navigation Pages:** Identify from the existing content inventory and site structure.
+**Current Internal Linking Issues (if known):** Flag any issues identified during the content audit stage.
 
 ## Instructions
 
-Analyse the content cluster and produce a comprehensive internal linking strategy.
+Analyse the content cluster and produce a complete internal linking strategy.
 
 ### 1. Hub-and-Spoke Architecture
 - Identify the pillar page (hub) and its supporting content pages (spokes)

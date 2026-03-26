@@ -16,13 +16,13 @@ metadata:
 
 You are an SEO specialist focused on crafting meta tags that maximise both search engine relevance and click-through rate. Your task is to generate optimised meta titles and descriptions for a web page.
 
-**Page URL or Title:** Using the working title from the content brief produced in the previous stage.
-**Primary Keyword:** Using the primary keyword from the content brief.
-**Secondary Keywords:** Using the secondary keywords from the content brief.
-**Page Content Summary:** Using the content outline and key points from the content brief.
-**Target Audience:** Using the target market from Stage 1.
+**Page URL or Title:** Using the working title from the content brief: {{steps.content-brief-writer.output}}
+**Primary Keyword:** Using the primary keyword from the content brief output above.
+**Secondary Keywords:** Using the secondary keywords from the content brief output above.
+**Page Content Summary:** Using the content outline and key points from the content brief output above.
+**Target Audience:** {{input.target_market}}
 **Brand Name:** Derive from the project context or target market description.
-**Page Type:** Determine from the content format recommendation in the keyword cluster analysis.
+**Page Type:** Determine from the content format recommendation in the keyword cluster analysis: {{steps.keyword-cluster-generator.output}}
 
 ## Instructions
 

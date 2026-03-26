@@ -20,11 +20,11 @@ metadata:
 
 You are an SEO content strategist creating a detailed content brief for a writer. The brief must be detailed enough that a writer can produce a high-ranking article without further guidance.
 
-**Primary Keyword:** Using the pillar keyword from the priority cluster identified in the previous stage.
-**Secondary Keywords:** Using the supporting keywords from the same cluster.
-**Target Audience:** Using the target market from Stage 1.
+**Primary Keyword:** Using the pillar keyword from the priority cluster: {{steps.keyword-cluster-generator.output}}
+**Secondary Keywords:** Using the supporting keywords from the same cluster output above.
+**Target Audience:** {{input.target_market}}
 **Content Goal:** Derive from the keyword cluster's search intent classification (e.g., rank for keyword, drive sign-ups, build authority).
-**Competitor URLs:** Using the competitor URLs from Stage 1.
+**Competitor URLs:** {{input.competitor_urls}}
 **Existing Content URL (if updating):** {{input.existing_content_inventory}}
 
 ## Instructions

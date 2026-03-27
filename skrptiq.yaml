@@ -19,10 +19,12 @@ tags:
   - "content-marketing"
 
 requires:
-  services: []
+  services:
+    - "llm-service"
   permissions:
     - "network:web-search"
   data_handling:
+    - "pii"
     - "website-analytics"
     - "keyword-data"
 

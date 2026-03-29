@@ -3,7 +3,7 @@ type: prompt
 id: internal-linking-strategist
 title: Internal Linking Strategist
 description: "Recommends internal linking structure for a content cluster to maximise SEO authority distribution"
-tags: [Production, optimisation:seo, writing:content]
+tags: [Production, Optimisation, Content]
 connections:
   - target: on-page-optimisation
     type: derived_from

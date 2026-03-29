@@ -3,7 +3,7 @@ type: prompt
 id: meta-tag-generator
 title: Meta Tag Generator
 description: "Generates meta titles and descriptions optimised for CTR and keywords"
-tags: [Production, optimisation:seo, writing:content]
+tags: [Production, Optimisation, Content]
 connections:
   - target: on-page-optimisation
     type: derived_from

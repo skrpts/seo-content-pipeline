@@ -3,7 +3,7 @@ type: workflow
 id: seo-content-pipeline
 title: SEO Content Pipeline
 description: "End-to-end SEO content strategy from keyword research through on-page optimisation"
-tags: [Production, Tested, analysis:content, optimisation:seo]
+tags: [Production, Tested, Optimisation, Content]
 connections:
   - target: keyword-research
     type: uses

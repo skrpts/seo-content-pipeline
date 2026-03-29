@@ -3,7 +3,7 @@ type: prompt
 id: content-audit-prompt
 title: Content Audit Prompt
 description: "Audits existing content for SEO improvements covering technical, on-page, and content quality factors"
-tags: [Production, analysis:content, optimisation:seo]
+tags: [Production, Optimisation, Content]
 connections:
   - target: on-page-optimisation
     type: derived_from

@@ -3,7 +3,7 @@ type: skill
 id: on-page-optimisation
 title: On-Page Optimisation
 description: "Analyses and optimises on-page SEO elements including meta tags, headings, content structure, and technical factors"
-tags: [Production, Tested, optimisation:seo, writing:content]
+tags: [Production, Tested, Optimisation, Content]
 connections:
   - target: llm-service
     type: runs_on

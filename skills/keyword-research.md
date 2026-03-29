@@ -3,7 +3,7 @@ type: skill
 id: keyword-research
 title: Keyword Research
 description: "Identifies and evaluates keywords for SEO targeting based on relevance, volume, difficulty, and search intent"
-tags: [Production, Tested, analysis:content, optimisation:seo]
+tags: [Production, Tested, Optimisation, Content]
 connections:
   - target: llm-service
     type: runs_on

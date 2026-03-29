@@ -3,7 +3,7 @@ type: prompt
 id: content-brief-writer
 title: Content Brief Writer
 description: "Writes an SEO content brief with target keywords, headings, word count, and competitor analysis"
-tags: [Production, analysis:competitive, writing:content, optimisation:seo]
+tags: [Production, Competitive, Content, Optimisation]
 connections:
   - target: keyword-research
     type: derived_from

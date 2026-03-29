@@ -3,7 +3,7 @@ type: source
 id: seo-ranking-factors-reference
 title: SEO Ranking Factors Reference
 description: "Reference guide to current search engine ranking factors and their relative importance"
-tags: [Production, Tested]
+tags: [Production, Tested, optimisation:seo, writing:content]
 connections: []
 metadata:
   last_updated: "2026-03"

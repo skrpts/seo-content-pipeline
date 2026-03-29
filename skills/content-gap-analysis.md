@@ -3,7 +3,7 @@ type: skill
 id: content-gap-analysis
 title: Content Gap Analysis
 description: "Identifies missing, thin, or underperforming content relative to competitors and target keyword coverage"
-tags: [Production, Tested]
+tags: [Production, Tested, analysis:competitive, analysis:risk, analysis:content, optimisation:seo]
 connections:
   - target: llm-service
     type: runs_on

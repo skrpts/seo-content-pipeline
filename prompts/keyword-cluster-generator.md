@@ -3,7 +3,7 @@ type: prompt
 id: keyword-cluster-generator
 title: Keyword Cluster Generator
 description: "Generates keyword clusters from a seed topic with search intent classification"
-tags: [Production]
+tags: [Production, optimisation:seo, utility:classification]
 connections:
   - target: keyword-research
     type: derived_from

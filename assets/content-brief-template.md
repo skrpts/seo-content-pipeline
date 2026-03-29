@@ -3,7 +3,7 @@ type: asset
 id: content-brief-template
 title: Content Brief Template
 description: "Structured template for SEO content briefs"
-tags: [Production]
+tags: [Production, writing:content, optimisation:seo]
 connections: []
 metadata:
   asset_type: "template"

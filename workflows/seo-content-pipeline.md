@@ -27,18 +27,18 @@ connections:
     type: references
   - target: seo-content-playbook
     type: references
+  - target: audience-segmentation
+  - target: content-briefing
+  - target: content-ideation
+  - target: headline-writing
+  - target: brand-voice-guide
 metadata:
   estimated_duration: "25-40 minutes"
   trigger: manual
-  - target: audience-segmentation
     type: uses
-  - target: content-briefing
     type: uses
-  - target: content-ideation
     type: uses
-  - target: headline-writing
     type: uses
-  - target: brand-voice-guide
     type: references
 ---
 

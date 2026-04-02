@@ -2,7 +2,7 @@ id: "a9a56e33-4add-471c-8578-3d8f2fac5f8e"
 name: "seo-content-pipeline"
 display_name: "SEO Content Pipeline"
 description: "SEO-optimised content strategy, keyword research, and on-page optimisation"
-version: "1.0.0"
+version: "1.0.1"
 engine: ">=1.0.0"
 
 author:
@@ -30,11 +30,11 @@ requires:
     - "keyword-data"
 
 contents:
-  skills: 3
+  skills: 7
   prompts: 5
   workflows: 1
   services: 1
-  sources: 1
+  sources: 2
   documents: 1
   assets: 1
-  total: 13
+  total: 18

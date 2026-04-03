@@ -9,8 +9,6 @@ connections:
     type: uses
   - target: on-page-optimisation
     type: uses
-  - target: content-gap-analysis
-    type: uses
   - target: keyword-cluster-generator
     type: uses
   - target: content-brief-writer
@@ -36,6 +34,8 @@ connections:
   - target: headline-writing
     type: uses
   - target: brand-voice-guide
+    type: uses
+  - target: input-gap-check
     type: uses
 metadata:
   estimated_duration: "25-40 minutes"

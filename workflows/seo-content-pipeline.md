@@ -9,16 +9,6 @@ connections:
     type: uses
   - target: on-page-optimisation
     type: uses
-  - target: keyword-cluster-generator
-    type: uses
-  - target: content-brief-writer
-    type: uses
-  - target: meta-tag-generator
-    type: uses
-  - target: content-audit-prompt
-    type: uses
-  - target: internal-linking-strategist
-    type: uses
   - target: llm-service
     type: runs_on
   - target: seo-ranking-factors-reference

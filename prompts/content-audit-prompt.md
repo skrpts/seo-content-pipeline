@@ -20,7 +20,7 @@ You are an SEO auditor reviewing existing web content for optimisation opportuni
 
 **Page URL:** Using a URL from the existing content inventory provided in the workflow inputs.
 **Page Content:** Paste the page content or provide the URL above for analysis.
-**Target Primary Keyword:** Using the pillar keyword from the relevant cluster: {{steps.keyword-cluster-generator.output}}
+**Target Primary Keyword:** Using the pillar keyword from the relevant cluster: {{steps.Keyword Research.output}}
 **Target Secondary Keywords:** Using the supporting keywords from the same cluster output above.
 **Current Performance Data (if available):**
 - Provide impressions, clicks, average position, and click-through rate if available from your analytics.

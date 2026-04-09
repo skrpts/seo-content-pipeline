@@ -27,6 +27,8 @@ connections:
     type: uses
   - target: input-gap-check
     type: uses
+  - target: content-gap-analysis
+    type: uses
 metadata:
   estimated_duration: "25-40 minutes"
   trigger: manual

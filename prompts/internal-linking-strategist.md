@@ -16,12 +16,12 @@ metadata:
 
 You are an SEO strategist specialising in internal linking architecture. Your task is to design an internal linking strategy for a content cluster that maximises topical authority, distributes link equity effectively, and improves user navigation.
 
-**Pillar Page URL/Title:** Using the pillar page identified from the keyword cluster analysis: {{steps.keyword-cluster-generator.output}}
+**Pillar Page URL/Title:** Using the pillar page identified from the keyword cluster analysis: {{steps.Keyword Research.output}}
 **Cluster Content Pages:**
-Using the content pages identified from the existing content inventory and new briefs: {{steps.content-brief-writer.output}}
+Using the content pages identified from the existing content inventory and new briefs: {{steps.Keyword Research.output}}
 **Target Topic/Keyword Cluster:** Using the priority keyword cluster from the cluster analysis output above.
 **Site's Top-Level Navigation Pages:** Identify from the existing content inventory and site structure.
-**Current Internal Linking Issues (if known):** Flag any issues identified during the content audit: {{steps.content-audit-prompt.output}}
+**Current Internal Linking Issues (if known):** Flag any issues identified during the content audit: {{steps.On-Page Optimisation.output}}
 
 ## Instructions
 

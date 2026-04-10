@@ -21,7 +21,7 @@ You are an SEO strategist specialising in internal linking architecture. Your ta
 Using the content pages identified from the existing content inventory and new briefs: {{steps.Keyword Research.output}}
 **Target Topic/Keyword Cluster:** Using the priority keyword cluster from the cluster analysis output above.
 **Site's Top-Level Navigation Pages:** Identify from the existing content inventory and site structure.
-**Current Internal Linking Issues (if known):** Flag any issues identified during the content audit: {{steps.On-Page Optimisation.output}}
+**Current Internal Linking Issues (if known):** Flag any issues identified during the content audit: {{steps.previous.output}}
 
 ## Instructions
 

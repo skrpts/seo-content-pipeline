@@ -2,7 +2,7 @@ id: "a9a56e33-4add-471c-8578-3d8f2fac5f8e"
 name: "seo-content-pipeline"
 display_name: "SEO Content Pipeline"
 description: "SEO-optimised content strategy, keyword research, and on-page optimisation"
-version: "1.1.6"
+version: "1.1.7"
 engine: ">=1.0.0"
 
 author:
@@ -28,6 +28,18 @@ requires:
     - "pii"
     - "website-analytics"
     - "keyword-data"
+
+# --- Output ---
+output_step: "content-gap-analysis"
+composite_steps:
+  - "keyword-research"
+  - "on-page-optimisation"
+  - "content-briefing"
+  - "content-ideation"
+  - "headline-writing"
+  - "brand-voice-guide"
+  - "input-gap-check"
+  - "content-gap-analysis"
 
 contents:
   skills: 8

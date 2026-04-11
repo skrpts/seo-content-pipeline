@@ -32,6 +32,22 @@ connections:
 metadata:
   estimated_duration: "25-40 minutes"
   trigger: manual
+execution:
+  - skill: "keyword-research"
+  - skill: "on-page-optimisation"
+    input_from: "keyword-research"
+  - skill: "content-briefing"
+    input_from: "on-page-optimisation"
+  - skill: "content-ideation"
+    input_from: "content-briefing"
+  - skill: "headline-writing"
+    input_from: "content-ideation"
+  - skill: "brand-voice-guide"
+    input_from: "headline-writing"
+  - skill: "content-gap-analysis"
+    input_from: "brand-voice-guide"
+  - skill: "input-gap-check"
+    input_from: "content-gap-analysis"
 ---
 
 ## Overview

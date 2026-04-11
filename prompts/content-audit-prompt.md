@@ -4,6 +4,13 @@ id: content-audit-prompt
 title: Content Audit Prompt
 description: "Audits existing content for SEO improvements covering technical, on-page, and content quality factors"
 tags: [Production, Optimisation, Content]
+inputs:
+  competitor_urls:
+    label: "Competitor URLs"
+    description: "Websites or profiles of competitors to research"
+    example: "https://notion.so, https://coda.io"
+    required: true
+    type: text
 connections:
   - target: on-page-optimisation
     type: derived_from

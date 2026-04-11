@@ -4,6 +4,13 @@ id: meta-tag-generator
 title: Meta Tag Generator
 description: "Generates meta titles and descriptions optimised for CTR and keywords"
 tags: [Production, Optimisation, Content]
+inputs:
+  target_market:
+    label: "Target Market"
+    description: "The target market segment"
+    example: "Mid-market B2B companies (100-1000 employees)"
+    required: true
+    type: text
 connections:
   - target: on-page-optimisation
     type: derived_from

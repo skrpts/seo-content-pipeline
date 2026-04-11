@@ -4,6 +4,25 @@ id: content-brief-writer
 title: Content Brief Writer
 description: "Writes an SEO content brief with target keywords, headings, word count, and competitor analysis"
 tags: [Production, Competitive, Content, Optimisation]
+inputs:
+  target_market:
+    label: "Target Market"
+    description: "The target market segment"
+    example: "Mid-market B2B companies (100-1000 employees)"
+    required: true
+    type: text
+  competitor_urls:
+    label: "Competitor URLs"
+    description: "Websites or profiles of competitors to research"
+    example: "https://notion.so, https://coda.io"
+    required: true
+    type: text
+  existing_content_inventory:
+    label: "Content Inventory"
+    description: "List of existing content pages with URLs and topics"
+    example: "[URL, title, topic, word count, last updated]"
+    required: true
+    type: text
 connections:
   - target: keyword-research
     type: derived_from

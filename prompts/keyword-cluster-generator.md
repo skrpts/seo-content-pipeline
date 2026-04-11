@@ -4,6 +4,25 @@ id: keyword-cluster-generator
 title: Keyword Cluster Generator
 description: "Generates keyword clusters from a seed topic with search intent classification"
 tags: [Production, Automation, Optimisation]
+inputs:
+  seed_topic_or_keyword:
+    label: "Seed Topic or Keyword"
+    description: "A starting topic or keyword to generate ideas from"
+    example: "remote team management"
+    required: true
+    type: text
+  target_market:
+    label: "Target Market"
+    description: "The target market segment"
+    example: "Mid-market B2B companies (100-1000 employees)"
+    required: true
+    type: text
+  competitor_urls:
+    label: "Competitor URLs"
+    description: "Websites or profiles of competitors to research"
+    example: "https://notion.so, https://coda.io"
+    required: true
+    type: text
 connections:
   - target: keyword-research
     type: derived_from

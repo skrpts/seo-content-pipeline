@@ -4,6 +4,13 @@ id: analyse-content-gaps
 title: "Analyse Content Gaps"
 description: "Identifies missing topics, thin content, and keyword opportunities in an existing content library"
 tags: [Production, Optimisation, Content]
+inputs:
+  target_keywords:
+    label: "Target Keywords"
+    description: "Keywords to target for SEO"
+    example: "AI workflow builder, prompt engineering tool, AI automation platform"
+    required: true
+    type: text
 connections:
   - target: content-gap-analysis
     type: derived_from

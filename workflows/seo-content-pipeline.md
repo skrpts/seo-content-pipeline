@@ -34,20 +34,31 @@ metadata:
   trigger: manual
 execution:
   - skill: "keyword-research"
+    step_type: "content"
+  - skill: "keyword-research"
+    step_type: "synthesis"
   - skill: "on-page-optimisation"
+    step_type: "content"
     input_from: "keyword-research"
   - skill: "content-briefing"
+    step_type: "content"
     input_from: "on-page-optimisation"
   - skill: "content-ideation"
+    step_type: "content"
     input_from: "content-briefing"
   - skill: "headline-writing"
+    step_type: "content"
     input_from: "content-ideation"
   - skill: "brand-voice-guide"
+    step_type: "content"
     input_from: "headline-writing"
   - skill: "content-gap-analysis"
+    step_type: "content"
     input_from: "brand-voice-guide"
   - skill: "input-gap-check"
+    step_type: "content"
     input_from: "content-gap-analysis"
+
 execution:
   - skill: "keyword-research"
     step_type: "synthesis"
@@ -71,8 +82,7 @@ execution:
     input_from: "headline-writing"
   - skill: "input-gap-check"
     step_type: "review"
-    input_from: "content-gap-analysis"
----
+    input_from: "content-gap-analysis"---
 
 ## Overview
 

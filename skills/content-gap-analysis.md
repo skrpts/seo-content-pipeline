@@ -4,6 +4,12 @@ id: content-gap-analysis
 title: Content Gap Analysis
 description: "Identifies missing topics, thin content, and keyword opportunities across an existing content library"
 tags: [Production, Optimisation, Content]
+context_params:
+  target_keywords:
+    label: "Target Keywords"
+    description: "Keywords to target for content gap analysis"
+    default: ""
+    required: true
 connections:
   - target: llm-service
     type: runs_on

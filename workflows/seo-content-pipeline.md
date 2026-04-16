@@ -42,9 +42,13 @@ execution:
     input_from: "keyword-research"
   - skill: "content-briefing"
     step_type: "content"
+    context:
+      target_audience: ""
     input_from: "on-page-optimisation"
   - skill: "content-ideation"
     step_type: "content"
+    context:
+      content_context: ""
     input_from: "content-briefing"
   - skill: "headline-writing"
     step_type: "content"
@@ -54,6 +58,8 @@ execution:
     input_from: "headline-writing"
   - skill: "content-gap-analysis"
     step_type: "content"
+    context:
+      target_keywords: ""
     input_from: "brand-voice-guide"
   - skill: "input-gap-check"
     step_type: "content"

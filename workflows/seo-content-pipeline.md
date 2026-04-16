@@ -9,6 +9,8 @@ connections:
     type: uses
   - target: on-page-optimisation
     type: uses
+  - target: language-polish
+    type: uses
   - target: llm-service
     type: runs_on
   - target: seo-ranking-factors-reference
@@ -32,63 +34,42 @@ connections:
 metadata:
   estimated_duration: "25-40 minutes"
   trigger: manual
+output_step: "language-polish"
+composite_steps:
+  - "keyword-research"
+  - "on-page-optimisation"
+  - "content-briefing"
+  - "content-ideation"
+  - "headline-writing"
+  - "content-gap-analysis"
+  - "language-polish"
 execution:
-  - skill: "keyword-research"
-    step_type: "content"
   - skill: "keyword-research"
     step_type: "synthesis"
   - skill: "on-page-optimisation"
-    step_type: "content"
-    input_from: "keyword-research"
+    step_type: "review"
   - skill: "content-briefing"
-    step_type: "content"
+    step_type: "generation"
     context:
       target_audience: ""
-    input_from: "on-page-optimisation"
   - skill: "content-ideation"
-    step_type: "content"
+    step_type: "generation"
     context:
       content_context: ""
-    input_from: "content-briefing"
-  - skill: "headline-writing"
-    step_type: "content"
-    input_from: "content-ideation"
-  - skill: "brand-voice-guide"
-    step_type: "content"
-    input_from: "headline-writing"
-  - skill: "content-gap-analysis"
-    step_type: "content"
-    context:
-      target_keywords: ""
-    input_from: "brand-voice-guide"
-  - skill: "input-gap-check"
-    step_type: "content"
-    input_from: "content-gap-analysis"
-
-execution:
-  - skill: "keyword-research"
-    step_type: "synthesis"
-  - skill: "on-page-optimisation"
-    step_type: "review"
-    input_from: "keyword-research"
-  - skill: "content-briefing"
-    step_type: "generation"
-    input_from: "on-page-optimisation"
-  - skill: "content-ideation"
-    step_type: "generation"
-    input_from: "content-briefing"
   - skill: "headline-writing"
     step_type: "generation"
-    input_from: "content-ideation"
-  - skill: "brand-voice-guide"
-    step_type: "review"
-    input_from: "headline-writing"
-  - skill: "content-gap-analysis"
-    step_type: "synthesis"
-    input_from: "headline-writing"
-  - skill: "input-gap-check"
-    step_type: "review"
-    input_from: "content-gap-analysis"---
+  - skill: "language-polish"
+    step_type: "content"
+  - parallel:
+    - skill: "brand-voice-guide"
+      step_type: "review"
+    - skill: "content-gap-analysis"
+      step_type: "synthesis"
+      context:
+        target_keywords: ""
+    - skill: "input-gap-check"
+      step_type: "review"
+---
 
 ## Overview
 

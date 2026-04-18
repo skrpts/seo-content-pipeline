@@ -46,8 +46,10 @@ composite_steps:
 execution:
   - skill: "keyword-research"
     step_type: "synthesis"
+    prompt: "keyword-cluster-generator"
   - skill: "on-page-optimisation"
     step_type: "review"
+    prompt: "meta-tag-generator"
   - skill: "content-briefing"
     step_type: "generation"
     context:

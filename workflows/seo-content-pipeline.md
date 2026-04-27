@@ -51,21 +51,26 @@ execution:
     step_type: "review"
     prompt: "meta-tag-generator"
   - skill: "content-briefing"
+    prompt: "create-content-brief"
     step_type: "generation"
     context:
       target_audience: ""
   - skill: "content-ideation"
+    prompt: "generate-content-ideas"
     step_type: "generation"
     context:
       content_context: ""
   - skill: "headline-writing"
+    prompt: "write-headlines"
     step_type: "generation"
   - skill: "language-polish"
+    prompt: "polish-language"
     step_type: "content"
   - parallel:
     - skill: "brand-voice-guide"
       step_type: "review"
     - skill: "content-gap-analysis"
+      prompt: "analyse-content-gaps"
       step_type: "synthesis"
       context:
         target_keywords: ""

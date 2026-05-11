@@ -18,7 +18,7 @@ connections:
   - target: seo-content-playbook
     type: references
   - target: audience-segmentation
-    type: references
+    type: uses
   - target: content-briefing
     type: uses
   - target: content-ideation
@@ -47,6 +47,11 @@ execution:
   - skill: "keyword-research"
     step_type: "synthesis"
     prompt: "keyword-cluster-generator"
+  - skill: "audience-segmentation"
+    step_type: "synthesis"
+    prompt: "segment-audience"
+    context:
+      market_context: ""
   - skill: "on-page-optimisation"
     step_type: "review"
     prompt: "meta-tag-generator"
@@ -66,6 +71,9 @@ execution:
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    context:
+      voice_profile: ""
+      grammar_strictness: ""
   - parallel:
     - skill: "brand-voice-guide"
       step_type: "review"

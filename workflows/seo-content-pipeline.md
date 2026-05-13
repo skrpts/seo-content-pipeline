@@ -51,7 +51,7 @@ execution:
     step_type: "synthesis"
     prompt: "segment-audience"
     context:
-      market_context: ""
+      market_context: "No additional market context"
   - skill: "on-page-optimisation"
     step_type: "review"
     prompt: "meta-tag-generator"
@@ -59,12 +59,12 @@ execution:
     prompt: "create-content-brief"
     step_type: "generation"
     context:
-      target_audience: ""
+      target_audience: "General professional audience"
   - skill: "content-ideation"
     prompt: "generate-content-ideas"
     step_type: "generation"
     context:
-      content_context: ""
+      content_context: "No additional context"
   - skill: "headline-writing"
     prompt: "write-headlines"
     step_type: "generation"
@@ -72,18 +72,19 @@ execution:
     prompt: "polish-language"
     step_type: "content"
     context:
-      voice_profile: ""
-      grammar_strictness: ""
+      voice_profile: "Neutral professional tone"
+      grammar_strictness: "Professional"
   - parallel:
     - skill: "brand-voice-guide"
-      step_type: "review"
+      step_type: "local.template"
     - skill: "content-gap-analysis"
       prompt: "analyse-content-gaps"
       step_type: "synthesis"
       context:
-        target_keywords: ""
+        target_keywords: "Not specified"
     - skill: "input-gap-check"
-      step_type: "review"
+      prompt: "check-input-gaps"
+    step_type: "validation"
 ---
 
 ## Overview

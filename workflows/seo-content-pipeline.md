@@ -47,22 +47,27 @@ execution:
   - skill: "keyword-research"
     step_type: "synthesis"
     prompt: "keyword-cluster-generator"
+    output: { name: "keyword_clusters", type: "list" }
   - skill: "audience-segmentation"
     step_type: "synthesis"
     prompt: "segment-audience"
+    output: { name: "audience_segments", type: "list" }
     context:
       market_context: "No additional market context"
   - skill: "on-page-optimisation"
     step_type: "review"
     prompt: "meta-tag-generator"
+    output: { name: "meta_tags", type: "text" }
   - skill: "content-briefing"
     prompt: "create-content-brief"
     step_type: "generation"
+    output: { name: "brief", type: "text" }
     context:
       target_audience: "General professional audience"
   - skill: "content-ideation"
     prompt: "generate-content-ideas"
     step_type: "generation"
+    output: { name: "ideas", type: "list" }
     context:
       content_context: "No additional context"
     bindings:
@@ -72,23 +77,28 @@ execution:
   - skill: "headline-writing"
     prompt: "write-headlines"
     step_type: "generation"
+    output: { name: "headlines", type: "list" }
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    output: { name: "polished_content", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
   - parallel:
     - skill: "brand-voice-guide"
       step_type: "local.template"
+      output: { name: "voice_guide", type: "text" }
     - skill: "content-gap-analysis"
       prompt: "analyse-content-gaps"
       step_type: "synthesis"
+      output: { name: "gap_analysis", type: "text" }
       context:
         target_keywords: "Not specified"
     - skill: "input-gap-check"
       prompt: "check-input-gaps"
-    step_type: "validation"
+      step_type: "validation"
+      output: { name: "input_gaps", type: "decision" }
 ---
 
 ## Overview

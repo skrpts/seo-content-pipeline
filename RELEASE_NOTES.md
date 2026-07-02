@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.29
+GH#745 — declare per-step `output: {name, type}` on every execution step (keyword_clusters/list, audience_segments/list, meta_tags/text, brief/text, ideas/list, headlines/list, polished_content/text, voice_guide/text, gap_analysis/text, input_gaps/decision). Lights up the #744 rich flow-map with named, typed outputs. **Also corrects the input-gap-check step to its intended `validation` type** — its `step_type` was mis-indented (outside the parallel item) and dropped at parse time, so the step previously ran untyped; it is now a validation gate. Content + structural fix (GH#748); no bindings changes.
+
 ## v1.1.28
 GH#645 Row 3 final — re-pin 7 prompt-deps to the new v1.0.2/v1.0.3 versions that now expose `nodes[].content` via /api/shared/<slug>/<v>/metadata (per GH#651 endpoint extension + d1Execute dual-mode fix). Engine validator's dep-aware loop-body `{{loop.item}}` interpolation check + binding from_step resolution now pass through deps for this consumer. No content changes; identity + dep-version repin only.
 

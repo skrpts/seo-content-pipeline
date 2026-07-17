@@ -3,7 +3,7 @@ type: prompt
 id: content-brief-writer
 title: Content Brief Writer
 description: "Writes an SEO content brief with target keywords, headings, word count, and competitor analysis"
-tags: [Production, Competitive, Content, Optimisation]
+tags: [Production, Competitive, Content, Optimization]
 inputs:
   target_market:
     label: "Target Market"
@@ -51,7 +51,7 @@ You are an SEO content strategist creating a detailed content brief for a writer
 Produce a complete content brief covering:
 
 ### 1. Content Overview
-- **Working Title** — A compelling, keyword-optimised title (50-60 characters)
+- **Working Title** — A compelling, keyword-optimized title (50-60 characters)
 - **Content Type** — Article, guide, listicle, comparison, tutorial, or other
 - **Target Word Count** — Based on competitor analysis and topic depth requirements
 - **Target Audience** — Who is reading this and what do they need
@@ -71,7 +71,7 @@ Produce a complete content brief covering:
 - **Conclusion Requirements** — Summary, next steps, and call to action
 
 ### 4. Competitor Analysis
-- Summarise the top 3 ranking pages for the primary keyword
+- Summarize the top 3 ranking pages for the primary keyword
 - Identify what they cover well and what they miss
 - Note their word count, heading structure, and content format
 - Highlight differentiation opportunities

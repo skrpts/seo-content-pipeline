@@ -1,9 +1,9 @@
 ---
 type: skill
 id: on-page-optimisation
-title: On-Page Optimisation
-description: "Analyses and optimises on-page SEO elements including meta tags, headings, content structure, and technical factors"
-tags: [Production, Tested, Optimisation, Content]
+title: On-Page Optimization
+description: "Analyzes and optimizes on-page SEO elements including meta tags, headings, content structure, and technical factors"
+tags: [Production, Tested, Optimization, Content]
 connections:
   - target: llm-service
     type: runs_on
@@ -16,11 +16,11 @@ metadata:
 
 ## Capability
 
-Evaluates web page content against current SEO best practices and produces specific, actionable optimisation recommendations. Covers meta elements, heading hierarchy, keyword placement, content structure, readability, and technical on-page factors.
+Evaluates web page content against current SEO best practices and produces specific, actionable optimization recommendations. Covers meta elements, heading hierarchy, keyword placement, content structure, readability, and technical on-page factors.
 
 ## When to Use
 
-- Optimising a new piece of content before publication
+- Optimizing a new piece of content before publication
 - Improving the SEO performance of an existing underperforming page
 - Auditing a batch of pages for on-page SEO compliance
 - Preparing content for a targeted keyword push
@@ -50,8 +50,8 @@ Evaluates web page content against current SEO best practices and produces speci
 ## Outputs
 
 - On-page SEO score (percentage against best practice checklist)
-- Prioritised list of optimisation recommendations with expected impact (high/medium/low)
-- Optimised meta title and description suggestions
+- Prioritized list of optimization recommendations with expected impact (high/medium/low)
+- Optimized meta title and description suggestions
 - Heading structure recommendations
 - Internal linking opportunities
 - Technical on-page improvement list
@@ -59,6 +59,6 @@ Evaluates web page content against current SEO best practices and produces speci
 ## Constraints
 
 - Never recommend keyword stuffing — keyword density above 2-3% is counterproductive
-- Prioritise user experience alongside SEO factors — readability and engagement matter more than mechanical keyword placement
+- Prioritize user experience alongside SEO factors — readability and engagement matter more than mechanical keyword placement
 - Base recommendations on current Google guidelines, not outdated tactics
 - Flag any recommendations that might conflict with brand voice or existing style guides

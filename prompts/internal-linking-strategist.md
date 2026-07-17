@@ -2,8 +2,8 @@
 type: prompt
 id: internal-linking-strategist
 title: Internal Linking Strategist
-description: "Recommends internal linking structure for a content cluster to maximise SEO authority distribution"
-tags: [Production, Optimisation, Content]
+description: "Recommends internal linking structure for a content cluster to maximize SEO authority distribution"
+tags: [Production, Optimization, Content]
 connections:
   - target: on-page-optimisation
     type: derived_from
@@ -14,7 +14,7 @@ metadata:
   avg_tokens: 2000
 ---
 
-You are an SEO strategist specialising in internal linking architecture. Your task is to design an internal linking strategy for a content cluster that maximises topical authority, distributes link equity effectively, and improves user navigation.
+You are an SEO strategist specializing in internal linking architecture. Your task is to design an internal linking strategy for a content cluster that maximizes topical authority, distributes link equity effectively, and improves user navigation.
 
 **Pillar Page URL/Title:** Using the pillar page identified from the keyword cluster analysis: {{steps.Keyword Research.output}}
 **Cluster Content Pages:**
@@ -25,7 +25,7 @@ Using the content pages identified from the existing content inventory and new b
 
 ## Instructions
 
-Analyse the content cluster and produce a complete internal linking strategy.
+Analyze the content cluster and produce a complete internal linking strategy.
 
 ### 1. Hub-and-Spoke Architecture
 - Identify the pillar page (hub) and its supporting content pages (spokes)

@@ -3,7 +3,7 @@ type: document
 id: seo-content-playbook
 title: SEO Content Playbook
 description: "Complete playbook for creating SEO-driven content from strategy through execution"
-tags: [Production, Tested, Optimisation, Content]
+tags: [Production, Tested, Optimization, Content]
 connections:
   - target: seo-ranking-factors-reference
     type: references
@@ -14,7 +14,7 @@ metadata:
 
 ## SEO Content Playbook
 
-This playbook provides a step-by-step guide for creating content that ranks in search engines whilst delivering genuine value to readers. It covers the full lifecycle from keyword strategy through publication and ongoing optimisation.
+This playbook provides a step-by-step guide for creating content that ranks in search engines while delivering genuine value to readers. It covers the full lifecycle from keyword strategy through publication and ongoing optimization.
 
 ### Phase 1: Strategy & Research
 
@@ -32,7 +32,7 @@ Assess your domain authority honestly. A new site with DA 15 should not target t
 - Niche topics where you have genuine expertise competitors lack
 
 **Build Your Keyword Universe**
-Use the keyword-cluster-generator prompt to create your initial keyword map. Organise clusters by:
+Use the keyword-cluster-generator prompt to create your initial keyword map. Organize clusters by:
 - Topic pillar (the broad subject areas you want to own)
 - Search intent (informational, commercial, transactional)
 - Funnel stage (awareness, consideration, decision)
@@ -44,7 +44,7 @@ Use the keyword-cluster-generator prompt to create your initial keyword map. Org
 Plan content in quarterly cycles with monthly themes:
 - Month 1: Publish pillar pages for your top 2-3 topic clusters
 - Month 2: Build supporting content (subtopic articles, guides, FAQs)
-- Month 3: Optimise, interlink, and refresh based on initial performance data
+- Month 3: Optimize, interlink, and refresh based on initial performance data
 
 **Content Brief Standards**
 Every piece of content should have a brief before writing begins. Use the content-brief-writer prompt to generate briefs that include:
@@ -70,7 +70,7 @@ Every piece of content should have a brief before writing begins. Use the conten
 - First-hand experience where relevant (case studies, personal testing, client examples)
 - Clear "about" page and editorial standards
 
-### Phase 4: On-Page Optimisation
+### Phase 4: On-Page Optimization
 
 **Pre-Publication Checklist**
 Run the content-audit-prompt on every piece before publishing:
@@ -91,11 +91,11 @@ Track each page's performance from week 2 onwards:
 - Analytics: organic sessions, bounce rate, time on page, conversions
 - Ranking tracker: position for primary and secondary keywords
 
-**Optimisation Cycles**
+**Optimization Cycles**
 Review content performance monthly and take action:
 - **Weeks 2-4:** Check indexing. If not indexed, request indexing and review technical issues.
 - **Month 2:** Review initial ranking positions. If not in top 50, reassess keyword targeting.
-- **Month 3:** If ranking 5-20, optimise meta tags and content depth. If ranking 20-50, consider significant content expansion.
+- **Month 3:** If ranking 5-20, optimize meta tags and content depth. If ranking 20-50, consider significant content expansion.
 - **Month 6:** Full content audit. Update statistics, add new sections, refresh examples. Resubmit in Search Console.
 - **Month 12:** Evaluate ROI. Decide whether to expand, consolidate, or retire.
 
@@ -109,6 +109,6 @@ Content loses freshness over time. Establish a refresh schedule:
 
 1. **Writing for search engines, not people** — If a human would not find your content useful, Google will not either.
 2. **Targeting keywords beyond your reach** — A DA 20 site will not rank for "best CRM software" against HubSpot and Salesforce.
-3. **Publishing and forgetting** — SEO content requires ongoing maintenance and optimisation.
+3. **Publishing and forgetting** — SEO content requires ongoing maintenance and optimization.
 4. **Ignoring search intent** — Ranking for the wrong intent wastes effort. Match content format to what searchers actually want.
 5. **Thin content clusters** — One article on a topic does not build authority. Plan clusters of 5-10 related pieces.

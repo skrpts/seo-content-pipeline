@@ -3,7 +3,7 @@ type: prompt
 id: content-audit-prompt
 title: Content Audit Prompt
 description: "Audits existing content for SEO improvements covering technical, on-page, and content quality factors"
-tags: [Production, Optimisation, Content]
+tags: [Production, Optimization, Content]
 inputs:
   competitor_urls:
     label: "Competitor URLs"
@@ -23,7 +23,7 @@ metadata:
   avg_tokens: 2500
 ---
 
-You are an SEO auditor reviewing existing web content for optimisation opportunities. Your audit must be thorough, specific, and actionable — no vague suggestions.
+You are an SEO auditor reviewing existing web content for optimization opportunities. Your audit must be thorough, specific, and actionable — no vague suggestions.
 
 **Page URL:** Using a URL from the existing content inventory provided in the workflow inputs.
 **Page Content:** Paste the page content or provide the URL above for analysis.
@@ -81,4 +81,4 @@ Evaluate the page against each of the following categories and provide a score (
 
 ## Output Format
 
-Provide a summary scorecard followed by a prioritised list of recommendations. Rank recommendations by expected impact (high / medium / low) and effort required (quick fix / moderate / significant). Start with high-impact, low-effort improvements.
+Provide a summary scorecard followed by a prioritized list of recommendations. Rank recommendations by expected impact (high / medium / low) and effort required (quick fix / moderate / significant). Start with high-impact, low-effort improvements.

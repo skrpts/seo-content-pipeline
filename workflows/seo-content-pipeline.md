@@ -2,8 +2,8 @@
 type: workflow
 id: seo-content-pipeline
 title: SEO Content Pipeline
-description: "End-to-end SEO content strategy from keyword research through on-page optimisation"
-tags: [Production, Tested, Optimisation, Content]
+description: "End-to-end SEO content strategy from keyword research through on-page optimization"
+tags: [Production, Tested, Optimization, Content]
 connections:
   - target: keyword-research
     type: uses
@@ -86,7 +86,7 @@ execution:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
   - parallel:
-    - skill: "brand-voice-guide"
+    - id: "brand-voice-guide"
       step_type: "local.template"
       output: { name: "voice_guide", type: "text" }
     - skill: "content-gap-analysis"
@@ -103,7 +103,7 @@ execution:
 
 ## Overview
 
-This workflow produces a complete SEO content strategy from initial keyword research through to on-page optimisation recommendations. It combines keyword clustering, content gap analysis, brief generation, and technical on-page checks into a single pipeline that outputs publication-ready content plans.
+This workflow produces a complete SEO content strategy from initial keyword research through to on-page optimization recommendations. It combines keyword clustering, content gap analysis, brief generation, and technical on-page checks into a single pipeline that outputs publication-ready content plans.
 
 ## Pipeline Stages
 
@@ -137,21 +137,21 @@ Invoke the **content-brief-writer** prompt to produce a detailed SEO content bri
 
 **Input:** URL or content of an existing page, target keywords
 
-Invoke the **content-audit-prompt** to analyse existing content for SEO improvements — keyword usage, heading structure, content depth, and technical issues.
+Invoke the **content-audit-prompt** to analyze existing content for SEO improvements — keyword usage, heading structure, content depth, and technical issues.
 
-**Output:** Prioritised list of improvements with expected impact.
+**Output:** Prioritized list of improvements with expected impact.
 
 **Note:** This stage runs in parallel with Stage 3 when auditing existing content alongside planning new content.
 
-### Stage 5: On-Page Optimisation
+### Stage 5: On-Page Optimization
 
 **Input:** Draft content or existing page content, target keywords from Stage 1
 
-Invoke the **on-page-optimisation** skill followed by the **meta-tag-generator** prompt to produce optimised meta titles, descriptions, and on-page elements.
+Invoke the **on-page-optimisation** skill followed by the **meta-tag-generator** prompt to produce optimized meta titles, descriptions, and on-page elements.
 
 Then invoke the **internal-linking-strategist** prompt to recommend internal linking structure across the content cluster.
 
-**Output:** Optimised meta tags, on-page recommendations, and internal linking plan.
+**Output:** Optimized meta tags, on-page recommendations, and internal linking plan.
 
 ## Error Handling
 
@@ -187,15 +187,15 @@ The complete pipeline produces:
 | Keyword clusters grouped by topic and intent , | Keyword clusters grouped by topic and intent , with estimated search volume tiers and difficulty ratings |
 | Gap report listing missing topics, underperforming pages, and competitor content advantages | Gap report listing missing topics, underperforming pages, and competitor content advantages |
 | Complete content brief ready to hand to a writer, using the content-brief-template asset format | Complete content brief ready to hand to a writer, using the content-brief-template asset format |
-| Prioritised list of improvements | Prioritised list of improvements with expected impact |
-| Optimised meta tags, on-page recommendations, and internal linking plan | Optimised meta tags, on-page recommendations, and internal linking plan |
+| Prioritized list of improvements | Prioritized list of improvements with expected impact |
+| Optimized meta tags, on-page recommendations, and internal linking plan | Optimized meta tags, on-page recommendations, and internal linking plan |
 
 ## Setup
 
 Before running this workflow:
 
 1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
-2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+2. Review the included documents, assets, or source nodes and customize them to match your team, brand, or domain conventions where needed.
 3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
 
 ## Provider Notes

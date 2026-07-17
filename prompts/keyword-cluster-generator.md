@@ -3,7 +3,7 @@ type: prompt
 id: keyword-cluster-generator
 title: Keyword Cluster Generator
 description: "Generates keyword clusters from a seed topic with search intent classification"
-tags: [Production, Automation, Optimisation]
+tags: [Production, Automation, Optimization]
 inputs:
   seed_topic_or_keyword:
     label: "Seed Topic or Keyword"
@@ -43,7 +43,7 @@ You are an SEO keyword strategist. Your task is to generate thorough keyword clu
 
 ## Instructions
 
-Analyse the seed topic and produce keyword clusters following this structure:
+Analyze the seed topic and produce keyword clusters following this structure:
 
 ### For each cluster, provide:
 
@@ -67,7 +67,7 @@ Analyse the seed topic and produce keyword clusters following this structure:
 
 - Generate a minimum of 5 keyword clusters and a maximum of 10
 - Include at least one cluster per intent type where relevant
-- Prioritise clusters by opportunity score (balance of volume, difficulty, and business relevance)
+- Prioritize clusters by opportunity score (balance of volume, difficulty, and business relevance)
 - Flag any clusters where keyword cannibalisation risk exists if targeting multiple keywords from the same cluster
 - For each cluster, note whether it represents a "pillar page" opportunity or a "supporting content" opportunity within a hub-and-spoke content model
 - Use British English spelling for all output

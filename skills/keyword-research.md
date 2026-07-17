@@ -3,7 +3,7 @@ type: skill
 id: keyword-research
 title: Keyword Research
 description: "Identifies and evaluates keywords for SEO targeting based on relevance, volume, difficulty, and search intent"
-tags: [Production, Tested, Optimisation, Content]
+tags: [Production, Tested, Optimization, Content]
 connections:
   - target: llm-service
     type: runs_on
@@ -16,7 +16,7 @@ metadata:
 
 ## Capability
 
-Performs thorough keyword research for a given topic, niche, or business domain. Analyses keywords across four dimensions: relevance to the target audience, estimated search volume tier, ranking difficulty, and search intent classification.
+Performs thorough keyword research for a given topic, niche, or business domain. Analyzes keywords across four dimensions: relevance to the target audience, estimated search volume tier, ranking difficulty, and search intent classification.
 
 ## When to Use
 
@@ -38,7 +38,7 @@ Performs thorough keyword research for a given topic, niche, or business domain.
 
 3. **Volume & Difficulty Estimation** — Estimate relative search volume (high/medium/low) and ranking difficulty (easy/moderate/hard/very hard) based on the competitiveness of the SERP landscape for each keyword. Consider domain authority requirements, content quality expectations, and existing competition.
 
-4. **Opportunity Scoring** — Score each keyword on an opportunity scale that balances volume against difficulty and relevance. Prioritise keywords where the content can realistically rank within 6-12 months.
+4. **Opportunity Scoring** — Score each keyword on an opportunity scale that balances volume against difficulty and relevance. Prioritize keywords where the content can realistically rank within 6-12 months.
 
 5. **Clustering Preparation** — Group related keywords loosely by topic to prepare for formal clustering in the next pipeline stage.
 
@@ -53,7 +53,7 @@ Performs thorough keyword research for a given topic, niche, or business domain.
 ## Outputs
 
 - Keyword list with intent classification, volume tier, and difficulty rating
-- Opportunity scores for prioritisation
+- Opportunity scores for prioritization
 - Initial topic groupings for clustering
 - Recommended primary and secondary keywords per topic group
 
@@ -61,5 +61,5 @@ Performs thorough keyword research for a given topic, niche, or business domain.
 
 - Do not fabricate specific search volume numbers — use tier-based estimates (high/medium/low) unless the user provides actual data from a keyword tool
 - Always consider search intent — a high-volume keyword with mismatched intent is worthless
-- Prioritise keywords that match the user's realistic ranking ability based on their domain authority level
+- Prioritize keywords that match the user's realistic ranking ability based on their domain authority level
 - Include at least 5 question-based keywords per topic area, as these drive featured snippet opportunities

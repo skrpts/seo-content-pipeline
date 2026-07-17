@@ -2,8 +2,8 @@
 type: prompt
 id: meta-tag-generator
 title: Meta Tag Generator
-description: "Generates meta titles and descriptions optimised for CTR and keywords"
-tags: [Production, Optimisation, Content]
+description: "Generates meta titles and descriptions optimized for CTR and keywords"
+tags: [Production, Optimization, Content]
 inputs:
   target_market:
     label: "Target Market"
@@ -21,7 +21,7 @@ metadata:
   avg_tokens: 1500
 ---
 
-You are an SEO specialist focused on crafting meta tags that maximise both search engine relevance and click-through rate. Your task is to generate optimised meta titles and descriptions for a web page.
+You are an SEO specialist focused on crafting meta tags that maximize both search engine relevance and click-through rate. Your task is to generate optimized meta titles and descriptions for a web page.
 
 **Page URL or Title:** Using the working title from the content brief: {{steps.Keyword Research.output}}
 **Primary Keyword:** Using the primary keyword from the content brief output above.
@@ -36,7 +36,7 @@ You are an SEO specialist focused on crafting meta tags that maximise both searc
 Generate 3 variants of meta titles and 3 variants of meta descriptions, each using a different approach.
 
 ### Meta Title Requirements (50-60 characters)
-- **Variant A — Keyword-Led:** Front-load the primary keyword. Prioritise relevance over creativity.
+- **Variant A — Keyword-Led:** Front-load the primary keyword. Prioritize relevance over creativity.
 - **Variant B — Benefit-Led:** Lead with the benefit the reader gets. Include the primary keyword naturally.
 - **Variant C — Curiosity-Led:** Use a compelling hook or number to drive clicks. Ensure the primary keyword appears.
 
@@ -46,7 +46,7 @@ For each variant, provide:
 - Whether the brand name is included and its placement rationale
 
 ### Meta Description Requirements (120-155 characters)
-- **Variant A — Descriptive:** Clearly summarise what the page covers. Include primary keyword and a call to action.
+- **Variant A — Descriptive:** Clearly summarize what the page covers. Include primary keyword and a call to action.
 - **Variant B — Problem-Solution:** State the problem the reader has and how this page solves it.
 - **Variant C — Social Proof / Data:** Include a number, statistic, or credibility marker to stand out in search results.
 

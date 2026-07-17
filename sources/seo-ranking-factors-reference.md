@@ -3,7 +3,7 @@ type: source
 id: seo-ranking-factors-reference
 title: SEO Ranking Factors Reference
 description: "Reference guide to current search engine ranking factors and their relative importance"
-tags: [Production, Tested, Optimisation, Content]
+tags: [Production, Tested, Optimization, Content]
 connections: []
 metadata:
   last_updated: "2026-03"
@@ -12,7 +12,7 @@ metadata:
 
 ## SEO Ranking Factors Reference Guide
 
-This reference outlines the key ranking factors that search engines use to evaluate and rank web pages. Use this as a checklist when producing keyword research, content briefs, and on-page optimisation recommendations.
+This reference outlines the key ranking factors that search engines use to evaluate and rank web pages. Use this as a checklist when producing keyword research, content briefs, and on-page optimization recommendations.
 
 ### Tier 1: Critical Ranking Factors
 
@@ -39,18 +39,18 @@ This reference outlines the key ranking factors that search engines use to evalu
 ### Tier 2: Important Ranking Factors
 
 **On-Page SEO Elements**
-- Title tag optimisation (50-60 characters, keyword placement)
+- Title tag optimization (50-60 characters, keyword placement)
 - Meta description (120-155 characters, compelling, keyword-inclusive)
 - Heading hierarchy (single H1, structured H2/H3s)
 - Keyword placement (first paragraph, headings, throughout content)
 - URL slug (short, descriptive, keyword-relevant)
-- Image alt text and file name optimisation
+- Image alt text and file name optimization
 
 **User Experience Signals**
 - Click-through rate from search results
 - Dwell time and engagement metrics
 - Bounce rate relative to content type
-- Pogo-sticking behaviour (returning to SERP and clicking another result)
+- Pogo-sticking behavior (returning to SERP and clicking another result)
 
 **Content Structure**
 - Readability appropriate to the target audience
@@ -73,8 +73,8 @@ This reference outlines the key ranking factors that search engines use to evalu
 - Topical authority (depth of content within a subject area)
 - Consistent publishing cadence
 
-**Local and Specialised Factors**
-- Google Business Profile optimisation (for local search)
+**Local and Specialized Factors**
+- Google Business Profile optimization (for local search)
 - NAP consistency (name, address, phone number)
 - Local content and landing pages
 - Industry-specific structured data
@@ -91,6 +91,6 @@ This reference outlines the key ranking factors that search engines use to evalu
 
 - **AI-generated content quality** — Search engines evaluate quality regardless of how content is produced. AI content is acceptable if it meets quality standards.
 - **Author entity signals** — Growing importance of identifiable, credible authors with verifiable expertise.
-- **Passage-level indexing** — Google can rank specific passages within a page, making section-level optimisation more important.
-- **Visual search optimisation** — Image SEO increasingly important as visual search adoption grows.
-- **AI Overview optimisation** — Content structured to appear in AI-generated search summaries and answer boxes.
+- **Passage-level indexing** — Google can rank specific passages within a page, making section-level optimization more important.
+- **Visual search optimization** — Image SEO increasingly important as visual search adoption grows.
+- **AI Overview optimization** — Content structured to appear in AI-generated search summaries and answer boxes.

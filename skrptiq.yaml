@@ -2,7 +2,7 @@ id: "a9a56e33-4add-471c-8578-3d8f2fac5f8e"
 name: "seo-content-pipeline"
 display_name: "SEO Content Pipeline"
 description: "SEO-optimized content strategy, keyword research, and on-page optimization"
-version: "1.1.30"
+version: "1.1.31"
 engine: ">=0.1.0"
 
 author:
@@ -70,8 +70,8 @@ dependencies:
     checksum: "sha256:18783015383c041de9c3fdaa191b79172ab534348448c20c74f9a967ab4dd917"
   - id: "9b1771e0-39b0-4fbc-8d45-738f51b6083a"
     name: "polish-language"
-    version: 1.0.3
-    checksum: "sha256:b48c92d9a1f25091d5b337b871ef065e45e9fcd3a9117a22e63bab19a1d0325a"
+    version: 1.0.6
+    checksum: "sha256:c9ad71f960c5bd2bdafc8c41a283acce4fb34ee9b9dc5f761d7443b5f18ecc40"
   - id: "18479da6-a5f3-4755-b9a4-5bdbc9196b0d"
     name: "segment-audience"
     version: 1.0.5
@@ -92,18 +92,18 @@ requires:
     - "keyword-data"
 
 contents:
-  skills: 3
+  skills: 6
   prompts: 5
   workflows: 1
   services: 0
   sources: 1
   documents: 1
   assets: 1
-  total: 12
+  total: 15
 
 security:
   status: "pass"
-  scanned_at: "2026-07-17T20:21:19.186Z"
+  scanned_at: "2026-07-18T15:52:28.286Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"

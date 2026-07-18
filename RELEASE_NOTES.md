@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.31
+GH#863 Wave 1 — fix the intent/output mismatch (K-045): the bundle shipped `content-brief-writer`, `content-audit-prompt`, and `internal-linking-strategist` prompts (the brief being the pipeline's real deliverable) and the docs said to run them, but the `execution:` block never invoked any of them — so the SEO content brief was never produced. Restored the intended bound graph: added a **Content Audit** step, an **Internal Linking Strategy** step, and a **SEO Content Brief** step (each with a backing skill so it is `from_step`-addressable), ordered them `headline-writing → content-audit → internal-linking → content-brief`, and rewired every cross-step input to an explicit `from_step` binding (`{{step.context.*}}`) instead of positional/mis-pointed `{{steps.<Title>.output}}` refs. The content-brief step is now the last content step before polish, assembling the brief from the keyword clusters, content-audit findings, internal-linking plan, and on-page meta tags. Also completed the tail: repinned `polish-language` 1.0.3→1.0.6 (the version that exposes the bindable `source` slot) and bound `language-polish`'s `source` ← the SEO Content Brief, so the `output_step` polishes the actual deliverable rather than its positional previous step. Manifest `contents.skills` 3→6, `total` 12→15.
+
 ## v1.1.30
 GH#845 — republish with American English (en-US) content, completing the source-only GH#805 flip that never reached the Hub. Copy only — no functional or behaviour change.
 

@@ -9,6 +9,12 @@ connections:
     type: uses
   - target: on-page-optimisation
     type: uses
+  - target: content-auditing
+    type: uses
+  - target: internal-linking
+    type: uses
+  - target: content-brief-authoring
+    type: uses
   - target: language-polish
     type: uses
   - target: llm-service
@@ -41,6 +47,9 @@ composite_steps:
   - "content-briefing"
   - "content-ideation"
   - "headline-writing"
+  - "content-auditing"
+  - "internal-linking"
+  - "content-brief-authoring"
   - "content-gap-analysis"
   - "language-polish"
 execution:
@@ -78,6 +87,42 @@ execution:
     prompt: "write-headlines"
     step_type: "generation"
     output: { name: "headlines", type: "list" }
+  - skill: "content-auditing"
+    prompt: "content-audit-prompt"
+    step_type: "review"
+    output: { name: "content_audit", type: "text" }
+    bindings:
+      keyword_clusters:
+        from_step: "Keyword Research"
+        field: output
+  - skill: "internal-linking"
+    prompt: "internal-linking-strategist"
+    step_type: "synthesis"
+    output: { name: "internal_linking", type: "text" }
+    bindings:
+      keyword_clusters:
+        from_step: "Keyword Research"
+        field: output
+      content_audit:
+        from_step: "Content Audit"
+        field: output
+  - skill: "content-brief-authoring"
+    prompt: "content-brief-writer"
+    step_type: "generation"
+    output: { name: "seo_brief", type: "text" }
+    bindings:
+      keyword_clusters:
+        from_step: "Keyword Research"
+        field: output
+      content_audit:
+        from_step: "Content Audit"
+        field: output
+      meta_tags:
+        from_step: "On-Page Optimization"
+        field: output
+      internal_linking:
+        from_step: "Internal Linking Strategy"
+        field: output
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
@@ -85,6 +130,10 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
+    bindings:
+      source:
+        from_step: "SEO Content Brief"
+        field: output
   - parallel:
     - id: "brand-voice-guide"
       step_type: "local.template"
@@ -107,6 +156,8 @@ This workflow produces a complete SEO content strategy from initial keyword rese
 
 ## Pipeline Stages
 
+The stages run in dependency order: keyword research and on-page work feed the content audit, the audit feeds the internal linking plan, and all upstream artifacts converge on the SEO content brief — the pipeline's headline deliverable — which is then polished for the final output.
+
 ### Stage 1: Keyword Research & Clustering
 
 **Input:** Seed topic or keyword, target market, competitor URLs (optional)
@@ -117,41 +168,53 @@ Invoke the **keyword-research** skill to identify relevant keywords, then pass r
 
 **Gate:** At least 3 viable keyword clusters must be identified before proceeding.
 
-### Stage 2: Content Gap Analysis
-
-**Input:** Keyword clusters from Stage 1, existing content inventory (URLs or titles), competitor content
-
-Invoke the **content-gap-analysis** skill to identify topics and keywords where your content is missing, thin, or outperformed by competitors.
-
-**Output:** Gap report listing missing topics, underperforming pages, and competitor content advantages.
-
-### Stage 3: Content Brief Generation
-
-**Input:** Priority keyword cluster, gap analysis results, competitor URLs
-
-Invoke the **content-brief-writer** prompt to produce a detailed SEO content brief including target keywords, heading structure, word count recommendation, and competitor analysis.
-
-**Output:** Complete content brief ready to hand to a writer, using the **content-brief-template** asset format.
-
-### Stage 4: Content Audit (Existing Content)
-
-**Input:** URL or content of an existing page, target keywords
-
-Invoke the **content-audit-prompt** to analyze existing content for SEO improvements — keyword usage, heading structure, content depth, and technical issues.
-
-**Output:** Prioritized list of improvements with expected impact.
-
-**Note:** This stage runs in parallel with Stage 3 when auditing existing content alongside planning new content.
-
-### Stage 5: On-Page Optimization
+### Stage 2: On-Page Optimization
 
 **Input:** Draft content or existing page content, target keywords from Stage 1
 
 Invoke the **on-page-optimisation** skill followed by the **meta-tag-generator** prompt to produce optimized meta titles, descriptions, and on-page elements.
 
-Then invoke the **internal-linking-strategist** prompt to recommend internal linking structure across the content cluster.
+**Output:** Optimized meta tags and on-page recommendations, carried forward into the content brief.
 
-**Output:** Optimized meta tags, on-page recommendations, and internal linking plan.
+### Stage 3: Content Ideation & Headlines
+
+**Input:** Keyword clusters, target audience, an initial content brief
+
+Invoke the **content-briefing**, **content-ideation**, and **headline-writing** skills to expand the priority clusters into concrete content ideas and candidate headlines.
+
+**Output:** A ranked idea list and headline options for the pieces the brief will specify.
+
+### Stage 4: Content Audit (Existing Content)
+
+**Input:** Priority keyword cluster from Stage 1, competitor URLs
+
+Invoke the **content-audit-prompt** (via the content-audit step) to analyze existing content for SEO improvements — keyword usage, heading structure, content depth, and technical issues.
+
+**Output:** Prioritized list of improvements with expected impact, feeding both the internal-linking plan and the final brief.
+
+### Stage 5: Internal Linking Strategy
+
+**Input:** Keyword clusters from Stage 1 and the content-audit findings from Stage 4
+
+Invoke the **internal-linking-strategist** (via the internal-linking step) to recommend a hub-and-spoke internal linking structure across the content cluster.
+
+**Output:** An internal linking plan — pillar-to-spoke and cross-spoke link recommendations with anchor text.
+
+### Stage 6: SEO Content Brief
+
+**Input:** Priority keyword cluster, content-audit findings, internal-linking plan, and on-page meta tags
+
+Invoke the **content-brief-writer** (via the content-brief step) to assemble a detailed SEO content brief including target keywords, heading structure, word count recommendation, competitor analysis, and on-page requirements.
+
+**Output:** A complete content brief ready to hand to a writer, using the **content-brief-template** asset format. This is the pipeline's primary deliverable.
+
+### Stage 7: Content Gap Analysis & Language Polish
+
+**Input:** The content brief from Stage 6, plus the brand voice guide and input-gap checks
+
+In parallel with the gap analysis and input-gap validation, invoke the **language-polish** step to polish the SEO content brief into its final, publication-ready form.
+
+**Output:** The polished content brief alongside a supporting gap report.
 
 ## Error Handling
 

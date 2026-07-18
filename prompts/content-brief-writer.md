@@ -23,6 +23,24 @@ inputs:
     example: "[URL, title, topic, word count, last updated]"
     required: true
     type: text
+context_params:
+  keyword_clusters:
+    label: "Keyword Clusters"
+    description: "The keyword clusters produced by the keyword-research stage — the pillar and supporting keywords for the brief."
+    required: false
+  content_audit:
+    label: "Content Audit Findings"
+    description: "The content-audit output — improvement opportunities for existing content."
+    required: false
+  meta_tags:
+    label: "Meta Tags"
+    description: "The optimized meta titles and descriptions from the on-page-optimisation stage."
+    required: false
+  internal_linking:
+    label: "Internal Linking Strategy"
+    description: "The internal linking plan — targets to weave into the brief's on-page requirements."
+    required: false
+    default_from_previous: true
 connections:
   - target: keyword-research
     type: derived_from
@@ -39,12 +57,15 @@ metadata:
 
 You are an SEO content strategist creating a detailed content brief for a writer. The brief must be detailed enough that a writer can produce a high-ranking article without further guidance.
 
-**Primary Keyword:** Using the pillar keyword from the priority cluster: {{steps.previous.output}}
+**Primary Keyword:** Using the pillar keyword from the priority cluster: {{step.context.keyword_clusters}}
 **Secondary Keywords:** Using the supporting keywords from the same cluster output above.
 **Target Audience:** {{input.target_market}}
 **Content Goal:** Derive from the keyword cluster's search intent classification (e.g., rank for keyword, drive sign-ups, build authority).
 **Competitor URLs:** {{input.competitor_urls}}
 **Existing Content URL (if updating):** {{input.existing_content_inventory}}
+**Content Audit Findings:** Fold in the improvement opportunities surfaced for existing content: {{step.context.content_audit}}
+**Recommended Meta Tags:** Reuse the optimized meta titles and descriptions from the on-page stage: {{step.context.meta_tags}}
+**Internal Linking Plan:** Incorporate the recommended internal linking targets: {{step.context.internal_linking}}
 
 ## Instructions
 

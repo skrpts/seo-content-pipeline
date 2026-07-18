@@ -4,6 +4,16 @@ id: internal-linking-strategist
 title: Internal Linking Strategist
 description: "Recommends internal linking structure for a content cluster to maximize SEO authority distribution"
 tags: [Production, Optimization, Content]
+context_params:
+  keyword_clusters:
+    label: "Keyword Clusters"
+    description: "The keyword clusters produced by the keyword-research stage — the pillar and cluster pages to link."
+    required: false
+  content_audit:
+    label: "Content Audit Findings"
+    description: "The content-audit output — surfaces current internal-linking issues to fix."
+    required: false
+    default_from_previous: true
 connections:
   - target: on-page-optimisation
     type: derived_from
@@ -16,12 +26,12 @@ metadata:
 
 You are an SEO strategist specializing in internal linking architecture. Your task is to design an internal linking strategy for a content cluster that maximizes topical authority, distributes link equity effectively, and improves user navigation.
 
-**Pillar Page URL/Title:** Using the pillar page identified from the keyword cluster analysis: {{steps.Keyword Research.output}}
+**Pillar Page URL/Title:** Using the pillar page identified from the keyword cluster analysis: {{step.context.keyword_clusters}}
 **Cluster Content Pages:**
-Using the content pages identified from the existing content inventory and new briefs: {{steps.Keyword Research.output}}
+Using the content pages identified from the existing content inventory and new briefs: {{step.context.keyword_clusters}}
 **Target Topic/Keyword Cluster:** Using the priority keyword cluster from the cluster analysis output above.
 **Site's Top-Level Navigation Pages:** Identify from the existing content inventory and site structure.
-**Current Internal Linking Issues (if known):** Flag any issues identified during the content audit: {{steps.previous.output}}
+**Current Internal Linking Issues (if known):** Flag any issues identified during the content audit: {{step.context.content_audit}}
 
 ## Instructions
 

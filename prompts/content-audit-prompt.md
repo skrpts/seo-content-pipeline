@@ -11,6 +11,11 @@ inputs:
     example: "https://notion.so, https://coda.io"
     required: true
     type: text
+context_params:
+  keyword_clusters:
+    label: "Keyword Clusters"
+    description: "The keyword clusters produced by the keyword-research stage — the source of the target keywords for this audit."
+    required: false
 connections:
   - target: on-page-optimisation
     type: derived_from
@@ -27,7 +32,7 @@ You are an SEO auditor reviewing existing web content for optimization opportuni
 
 **Page URL:** Using a URL from the existing content inventory provided in the workflow inputs.
 **Page Content:** Paste the page content or provide the URL above for analysis.
-**Target Primary Keyword:** Using the pillar keyword from the relevant cluster: {{steps.Keyword Research.output}}
+**Target Primary Keyword:** Using the pillar keyword from the relevant cluster: {{step.context.keyword_clusters}}
 **Target Secondary Keywords:** Using the supporting keywords from the same cluster output above.
 **Current Performance Data (if available):**
 - Provide impressions, clicks, average position, and click-through rate if available from your analytics.

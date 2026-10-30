@@ -52,6 +52,19 @@ composite_steps:
   - "content-brief-authoring"
   - "content-gap-analysis"
   - "language-polish"
+inputs:
+  inputs_provided:
+    label: "Inputs Provided"
+    description: "What was supplied for this content run — target keywords, audience and goals, so gaps in it can be reported"
+    example: "Target 'invoice software uk'; audience freelance designers; goal organic signups"
+    required: true
+    type: text
+  product_or_campaign:
+    label: "Product or Campaign"
+    description: "The product or campaign the audience is being segmented for"
+    example: "A time-tracking app for freelancers, targeting the UK market"
+    required: true
+    type: text
 execution:
   - skill: "keyword-research"
     step_type: "synthesis"
@@ -63,6 +76,9 @@ execution:
     output: { name: "audience_segments", type: "list" }
     context:
       market_context: "No additional market context"
+    bindings:
+      source:
+        from_input: "product_or_campaign"
   - skill: "on-page-optimisation"
     step_type: "review"
     prompt: "meta-tag-generator"
@@ -73,6 +89,10 @@ execution:
     output: { name: "brief", type: "text" }
     context:
       target_audience: "General professional audience"
+    bindings:
+      source:
+        from_step: "Keyword Research"
+        field: output
   - skill: "content-ideation"
     prompt: "generate-content-ideas"
     step_type: "generation"
@@ -87,6 +107,10 @@ execution:
     prompt: "write-headlines"
     step_type: "generation"
     output: { name: "headlines", type: "list" }
+    bindings:
+      source:
+        from_step: "Content Ideation"
+        field: output
   - skill: "content-auditing"
     prompt: "content-audit-prompt"
     step_type: "review"
@@ -144,10 +168,17 @@ execution:
       output: { name: "gap_analysis", type: "text" }
       context:
         target_keywords: "Not specified"
+      bindings:
+        source:
+          from_step: "Content Audit"
+          field: output
     - skill: "input-gap-check"
       prompt: "check-input-gaps"
       step_type: "validation"
       output: { name: "input_gaps", type: "decision" }
+      bindings:
+        source:
+          from_input: "inputs_provided"
 ---
 
 ## Overview

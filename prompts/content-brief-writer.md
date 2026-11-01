@@ -40,7 +40,6 @@ context_params:
     label: "Internal Linking Strategy"
     description: "The internal linking plan — targets to weave into the brief's on-page requirements."
     required: false
-    default_from_previous: true
 connections:
   - target: keyword-research
     type: derived_from

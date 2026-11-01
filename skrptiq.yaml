@@ -2,7 +2,7 @@ id: "a9a56e33-4add-471c-8578-3d8f2fac5f8e"
 name: "seo-content-pipeline"
 display_name: "SEO Content Pipeline"
 description: "SEO-optimized content strategy, keyword research, and on-page optimization"
-version: "1.1.32"
+version: "1.1.33"
 engine: ">=0.1.0"
 
 author:
@@ -103,7 +103,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-10-30T09:25:59.862Z"
+  scanned_at: "2026-11-01T19:26:48.299Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"

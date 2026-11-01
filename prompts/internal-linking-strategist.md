@@ -13,7 +13,6 @@ context_params:
     label: "Content Audit Findings"
     description: "The content-audit output — surfaces current internal-linking issues to fix."
     required: false
-    default_from_previous: true
 connections:
   - target: on-page-optimisation
     type: derived_from

@@ -2,7 +2,7 @@ id: "a9a56e33-4add-471c-8578-3d8f2fac5f8e"
 name: "seo-content-pipeline"
 display_name: "SEO Content Pipeline"
 description: "SEO-optimized content strategy, keyword research, and on-page optimization"
-version: "1.1.33"
+version: "1.1.34"
 engine: ">=0.1.0"
 
 author:
@@ -26,8 +26,8 @@ dependencies:
     checksum: "sha256:0323b216b15abce36edf809e99ad4dc84b9304ae5b663d388ebb9c434631d86a"
   - id: "977ca840-8322-4df1-bc13-98d43b3e41a8"
     name: "audience-segmentation"
-    version: 1.0.2
-    checksum: "sha256:913727caeec5a262ab4213fe98b04f2506620f895d877f41637cb0cdf40bb87b"
+    version: 1.0.3
+    checksum: "sha256:a14d9ff15fc8d87993289a170824138377ac553e56258398149cfd9cb0893ba7"
   - id: "89a5666b-057e-4acc-9c1b-15858bd832dd"
     name: "brand-voice-guide"
     version: 1.0.3
@@ -58,8 +58,8 @@ dependencies:
     checksum: "sha256:909d3ed08f4d19b9fb14186a035a76209930b2208cbbfeab4161454b5e305f16"
   - id: "a20ad2f8-a4ca-4c9f-a39b-5674f0773881"
     name: "input-gap-check"
-    version: 1.0.3
-    checksum: "sha256:e29d3c2091a058d0751079b8026038734d0412a7aec0938d72290815fe443bf7"
+    version: 1.0.4
+    checksum: "sha256:fd5eaa129563d4c18fa0f012d862d627809f480aa5a9f9c45b30d688d7ae110e"
   - id: "3db66b8b-8758-4503-a555-5330f3f9b3d9"
     name: "language-polish"
     version: 1.0.3
@@ -103,7 +103,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-11-01T19:26:48.299Z"
+  scanned_at: "2026-11-08T15:22:26.422Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"
